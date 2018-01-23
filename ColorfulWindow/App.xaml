@@ -1,0 +1,34 @@
+﻿<Application x:Class="ComSpexApp.App"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="ColorfulWindow.xaml">
+    <Application.Resources>
+		<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="greener">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#FF779977" Offset="0" />
+				<GradientStop Color="#FF108810" Offset="0.3" />
+				<GradientStop Color="#FF009900" Offset="0.3" />
+				<GradientStop Color="#FF2AC52A" Offset="0.3" />
+				<GradientStop Color="#FF008800" Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="greeny">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#FFDDFFDD" Offset="0" />
+				<GradientStop Color="#FF90EE90" Offset="0.3" />
+				<GradientStop Color="#FF00FF00" Offset="0.3" />
+				<GradientStop Color="#FF32CD32" Offset="0.3" />
+				<GradientStop Color="#FF00EE00" Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" x:Key="vista">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#FFDDFFDD" Offset="0" />
+				<GradientStop Color="#FF90EE90" Offset="0.5" />
+				<GradientStop Color="#FF00FF00" Offset="0.5" />
+				<GradientStop Color="#FF32CD32" Offset="0.5" />
+				<GradientStop Color="#FF00EE00" Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+	</Application.Resources>
+</Application>

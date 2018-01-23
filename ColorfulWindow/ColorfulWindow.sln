@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorfulWindow", "ColorfulWindow.csproj", "{243635A3-1400-47B1-BC66-98F3DF14959F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsListbox", "..\ColorsListbox\ColorsListbox.csproj", "{BD94B19B-5982-49E6-9677-51212EE7C309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlinedText", "..\..\..\..\Visual Studio 2008\Projects\Greetings\OutlinedText\OutlinedText.csproj", "{008DC332-1BB5-4CE3-9266-E121CC1427D4}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ColorfulWindow.csproj
+		SccProjectName0 = \u0022$/WPF/ColorfulWindow\u0022,\u0020SCEAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+		SccProjectUniqueName1 = ..\\ColorsListbox\\ColorsListbox.csproj
+		SccProjectName1 = \u0022$/WPF/ColorsListbox\u0022,\u0020BCEAAAAA
+		SccLocalPath1 = ..\\ColorsListbox
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+		SccProjectUniqueName2 = ..\\..\\..\\..\\Visual\u0020Studio\u00202008\\Projects\\Greetings\\OutlinedText\\OutlinedText.csproj
+		SccProjectName2 = \u0022$/Greetings.root/Greetings/OutlinedText\u0022,\u0020WJAAAAAA
+		SccLocalPath2 = ..\\..\\..\\..\\Visual\u0020Studio\u00202008\\Projects\\Greetings\\OutlinedText
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

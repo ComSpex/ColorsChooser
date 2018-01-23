@@ -1,0 +1,159 @@
+﻿<UserControl x:Class="ComSpexWpf.ColorsListbox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:petz="clr-namespace:ComSpexWpf"
+						 Width="250" Height="304">
+	<ListBox SelectedValuePath="Brush" FontFamily="Courier New" Background="Transparent"
+					 SelectionChanged="List_SelectionChanged"
+					 Name="List">
+		<ListBox.ItemTemplate>
+			<DataTemplate DataType="{x:Type petz:NamedBrush}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="16" Height="16" Margin="2,2,2,2" Stroke="#FF000000" Fill="{Binding Path=Brush}" />
+					<TextBlock VerticalAlignment="Center" Text="{Binding Path=BrushName}" />
+				</StackPanel>
+			</DataTemplate>
+		</ListBox.ItemTemplate>
+		<petz:NamedBrush Brush="#FFF0F8FF" BrushName="#F0F8FF Alice Blue" />
+		<petz:NamedBrush Brush="#FFFAEBD7" BrushName="#FAEBD7 Antique White" />
+		<petz:NamedBrush Brush="#FF00FFFF" BrushName="#00FFFF Aqua" />
+		<petz:NamedBrush Brush="#FF7FFFD4" BrushName="#7FFFD4 Aquamarine" />
+		<petz:NamedBrush Brush="#FFF0FFFF" BrushName="#F0FFFF Azure" />
+		<petz:NamedBrush Brush="#FFF5F5DC" BrushName="#F5F5DC Beige" />
+		<petz:NamedBrush Brush="#FFFFE4C4" BrushName="#FFE4C4 Bisque" />
+		<petz:NamedBrush Brush="#FF000000" BrushName="#000000 Black" />
+		<petz:NamedBrush Brush="#FFFFEBCD" BrushName="#FFEBCD Blanched Almond" />
+		<petz:NamedBrush Brush="#FF0000FF" BrushName="#0000FF Blue" />
+		<petz:NamedBrush Brush="#FF8A2BE2" BrushName="#8A2BE2 Blue Violet" />
+		<petz:NamedBrush Brush="#FFA52A2A" BrushName="#A52A2A Brown" />
+		<petz:NamedBrush Brush="#FFDEB887" BrushName="#DEB887 Burly Wood" />
+		<petz:NamedBrush Brush="#FF5F9EA0" BrushName="#5F9EA0 Cadet Blue" />
+		<petz:NamedBrush Brush="#FF7FFF00" BrushName="#7FFF00 Chartreuse" />
+		<petz:NamedBrush Brush="#FFD2691E" BrushName="#D2691E Chocolate" />
+		<petz:NamedBrush Brush="#FFFF7F50" BrushName="#FF7F50 Coral" />
+		<petz:NamedBrush Brush="#FF6495ED" BrushName="#6495ED Cornflower Blue" />
+		<petz:NamedBrush Brush="#FFFFF8DC" BrushName="#FFF8DC Cornsilk" />
+		<petz:NamedBrush Brush="#FFDC143C" BrushName="#DC143C Crimson" />
+		<petz:NamedBrush Brush="#FF00FFFF" BrushName="#00FFFF Cyan" />
+		<petz:NamedBrush Brush="#FF00008B" BrushName="#00008B Dark Blue" />
+		<petz:NamedBrush Brush="#FF008B8B" BrushName="#008B8B Dark Cyan" />
+		<petz:NamedBrush Brush="#FFB8860B" BrushName="#B8860B Dark Goldenrod" />
+		<petz:NamedBrush Brush="#FFA9A9A9" BrushName="#A9A9A9 Dark Gray" />
+		<petz:NamedBrush Brush="#FF006400" BrushName="#006400 Dark Green" />
+		<petz:NamedBrush Brush="#FFBDB76B" BrushName="#BDB76B Dark Khaki" />
+		<petz:NamedBrush Brush="#FF8B008B" BrushName="#8B008B Dark Magenta" />
+		<petz:NamedBrush Brush="#FF556B2F" BrushName="#556B2F Dark Olive Green" />
+		<petz:NamedBrush Brush="#FFFF8C00" BrushName="#FF8C00 Dark Orange" />
+		<petz:NamedBrush Brush="#FF9932CC" BrushName="#9932CC Dark Orchid" />
+		<petz:NamedBrush Brush="#FF8B0000" BrushName="#8B0000 Dark Red" />
+		<petz:NamedBrush Brush="#FFE9967A" BrushName="#E9967A Dark Salmon" />
+		<petz:NamedBrush Brush="#FF8FBC8F" BrushName="#8FBC8F Dark Sea Green" />
+		<petz:NamedBrush Brush="#FF483D8B" BrushName="#483D8B Dark Slate Blue" />
+		<petz:NamedBrush Brush="#FF2F4F4F" BrushName="#2F4F4F Dark Slate Gray" />
+		<petz:NamedBrush Brush="#FF00CED1" BrushName="#00CED1 Dark Turquoise" />
+		<petz:NamedBrush Brush="#FF9400D3" BrushName="#9400D3 Dark Violet" />
+		<petz:NamedBrush Brush="#FFFF1493" BrushName="#FF1493 Deep Pink" />
+		<petz:NamedBrush Brush="#FF00BFFF" BrushName="#00BFFF Deep Sky Blue" />
+		<petz:NamedBrush Brush="#FF696969" BrushName="#696969 Dim Gray" />
+		<petz:NamedBrush Brush="#FF1E90FF" BrushName="#1E90FF Dodger Blue" />
+		<petz:NamedBrush Brush="#FFB22222" BrushName="#B22222 Firebrick" />
+		<petz:NamedBrush Brush="#FFFFFAF0" BrushName="#FFFAF0 Floral White" />
+		<petz:NamedBrush Brush="#FF228B22" BrushName="#228B22 Forest Green" />
+		<petz:NamedBrush Brush="#FFFF00FF" BrushName="#FF00FF Fuchsia" />
+		<petz:NamedBrush Brush="#FFDCDCDC" BrushName="#DCDCDC Gainsboro" />
+		<petz:NamedBrush Brush="#FFF8F8FF" BrushName="#F8F8FF Ghost White" />
+		<petz:NamedBrush Brush="#FFFFD700" BrushName="#FFD700 Gold" />
+		<petz:NamedBrush Brush="#FFDAA520" BrushName="#DAA520 Goldenrod" />
+		<petz:NamedBrush Brush="#FF808080" BrushName="#808080 Gray" />
+		<petz:NamedBrush Brush="#FF008000" BrushName="#008000 Green" />
+		<petz:NamedBrush Brush="#FFADFF2F" BrushName="#ADFF2F Green Yellow" />
+		<petz:NamedBrush Brush="#FFF0FFF0" BrushName="#F0FFF0 Honeydew" />
+		<petz:NamedBrush Brush="#FFFF69B4" BrushName="#FF69B4 Hot Pink" />
+		<petz:NamedBrush Brush="#FFCD5C5C" BrushName="#CD5C5C Indian Red" />
+		<petz:NamedBrush Brush="#FF4B0082" BrushName="#4B0082 Indigo" />
+		<petz:NamedBrush Brush="#FFFFFFF0" BrushName="#FFFFF0 Ivory" />
+		<petz:NamedBrush Brush="#FFF0E68C" BrushName="#F0E68C Khaki" />
+		<petz:NamedBrush Brush="#FFE6E6FA" BrushName="#E6E6FA Lavender" />
+		<petz:NamedBrush Brush="#FFFFF0F5" BrushName="#FFF0F5 Lavender Blush" />
+		<petz:NamedBrush Brush="#FF7CFC00" BrushName="#7CFC00 Lawn Green" />
+		<petz:NamedBrush Brush="#FFFFFACD" BrushName="#FFFACD Lemon Chiffon" />
+		<petz:NamedBrush Brush="#FFADD8E6" BrushName="#ADD8E6 Light Blue" />
+		<petz:NamedBrush Brush="#FFF08080" BrushName="#F08080 Light Coral" />
+		<petz:NamedBrush Brush="#FFE0FFFF" BrushName="#E0FFFF Light Cyan" />
+		<petz:NamedBrush Brush="#FFFAFAD2" BrushName="#FAFAD2 Light Goldenrod Yellow" />
+		<petz:NamedBrush Brush="#FFD3D3D3" BrushName="#D3D3D3 Light Gray" />
+		<petz:NamedBrush Brush="#FF90EE90" BrushName="#90EE90 Light Green" />
+		<petz:NamedBrush Brush="#FFFFB6C1" BrushName="#FFB6C1 Light Pink" />
+		<petz:NamedBrush Brush="#FFFFA07A" BrushName="#FFA07A Light Salmon" />
+		<petz:NamedBrush Brush="#FF20B2AA" BrushName="#20B2AA Light Sea Green" />
+		<petz:NamedBrush Brush="#FF87CEFA" BrushName="#87CEFA Light Sky Blue" />
+		<petz:NamedBrush Brush="#FF778899" BrushName="#778899 Light Slate Gray" />
+		<petz:NamedBrush Brush="#FFB0C4DE" BrushName="#B0C4DE Light Steel Blue" />
+		<petz:NamedBrush Brush="#FFFFFFE0" BrushName="#FFFFE0 Light Yellow" />
+		<petz:NamedBrush Brush="#FF00FF00" BrushName="#00FF00 Lime" />
+		<petz:NamedBrush Brush="#FF32CD32" BrushName="#32CD32 Lime Green" />
+		<petz:NamedBrush Brush="#FFFAF0E6" BrushName="#FAF0E6 Linen" />
+		<petz:NamedBrush Brush="#FFFF00FF" BrushName="#FF00FF Magenta" />
+		<petz:NamedBrush Brush="#FF800000" BrushName="#800000 Maroon" />
+		<petz:NamedBrush Brush="#FF66CDAA" BrushName="#66CDAA Medium Aquamarine" />
+		<petz:NamedBrush Brush="#FF0000CD" BrushName="#0000CD Medium Blue" />
+		<petz:NamedBrush Brush="#FFBA55D3" BrushName="#BA55D3 Medium Orchid" />
+		<petz:NamedBrush Brush="#FF9370DB" BrushName="#9370DB Medium Purple" />
+		<petz:NamedBrush Brush="#FF3CB371" BrushName="#3CB371 Medium Sea Green" />
+		<petz:NamedBrush Brush="#FF7B68EE" BrushName="#7B68EE Medium Slate Blue" />
+		<petz:NamedBrush Brush="#FF00FA9A" BrushName="#00FA9A Medium Spring Green" />
+		<petz:NamedBrush Brush="#FF48D1CC" BrushName="#48D1CC Medium Turquoise" />
+		<petz:NamedBrush Brush="#FFC71585" BrushName="#C71585 Medium Violet Red" />
+		<petz:NamedBrush Brush="#FF191970" BrushName="#191970 Midnight Blue" />
+		<petz:NamedBrush Brush="#FFF5FFFA" BrushName="#F5FFFA Mint Cream" />
+		<petz:NamedBrush Brush="#FFFFE4E1" BrushName="#FFE4E1 Misty Rose" />
+		<petz:NamedBrush Brush="#FFFFE4B5" BrushName="#FFE4B5 Moccasin" />
+		<petz:NamedBrush Brush="#FFFFDEAD" BrushName="#FFDEAD Navajo White" />
+		<petz:NamedBrush Brush="#FF000080" BrushName="#000080 Navy" />
+		<petz:NamedBrush Brush="#FFFDF5E6" BrushName="#FDF5E6 Old Lace" />
+		<petz:NamedBrush Brush="#FF808000" BrushName="#808000 Olive" />
+		<petz:NamedBrush Brush="#FF6B8E23" BrushName="#6B8E23 Olive Drab" />
+		<petz:NamedBrush Brush="#FFFFA500" BrushName="#FFA500 Orange" />
+		<petz:NamedBrush Brush="#FFFF4500" BrushName="#FF4500 Orange Red" />
+		<petz:NamedBrush Brush="#FFDA70D6" BrushName="#DA70D6 Orchid" />
+		<petz:NamedBrush Brush="#FFEEE8AA" BrushName="#EEE8AA Pale Goldenrod" />
+		<petz:NamedBrush Brush="#FF98FB98" BrushName="#98FB98 Pale Green" />
+		<petz:NamedBrush Brush="#FFAFEEEE" BrushName="#AFEEEE Pale Turquoise" />
+		<petz:NamedBrush Brush="#FFDB7093" BrushName="#DB7093 Pale Violet Red" />
+		<petz:NamedBrush Brush="#FFFFEFD5" BrushName="#FFEFD5 Papaya Whip" />
+		<petz:NamedBrush Brush="#FFFFDAB9" BrushName="#FFDAB9 Peach Puff" />
+		<petz:NamedBrush Brush="#FFCD853F" BrushName="#CD853F Peru" />
+		<petz:NamedBrush Brush="#FFFFC0CB" BrushName="#FFC0CB Pink" />
+		<petz:NamedBrush Brush="#FFDDA0DD" BrushName="#DDA0DD Plum" />
+		<petz:NamedBrush Brush="#FFB0E0E6" BrushName="#B0E0E6 Powder Blue" />
+		<petz:NamedBrush Brush="#FF800080" BrushName="#800080 Purple" />
+		<petz:NamedBrush Brush="#FFFF0000" BrushName="#FF0000 Red" />
+		<petz:NamedBrush Brush="#FFBC8F8F" BrushName="#BC8F8F Rosy Brown" />
+		<petz:NamedBrush Brush="#FF4169E1" BrushName="#4169E1 Royal Blue" />
+		<petz:NamedBrush Brush="#FF8B4513" BrushName="#8B4513 Saddle Brown" />
+		<petz:NamedBrush Brush="#FFFA8072" BrushName="#FA8072 Salmon" />
+		<petz:NamedBrush Brush="#FFF4A460" BrushName="#F4A460 Sandy Brown" />
+		<petz:NamedBrush Brush="#FF2E8B57" BrushName="#2E8B57 Sea Green" />
+		<petz:NamedBrush Brush="#FFFFF5EE" BrushName="#FFF5EE Sea Shell" />
+		<petz:NamedBrush Brush="#FFA0522D" BrushName="#A0522D Sienna" />
+		<petz:NamedBrush Brush="#FFC0C0C0" BrushName="#C0C0C0 Silver" />
+		<petz:NamedBrush Brush="#FF87CEEB" BrushName="#87CEEB Sky Blue" />
+		<petz:NamedBrush Brush="#FF6A5ACD" BrushName="#6A5ACD Slate Blue" />
+		<petz:NamedBrush Brush="#FF708090" BrushName="#708090 Slate Gray" />
+		<petz:NamedBrush Brush="#FFFFFAFA" BrushName="#FFFAFA Snow" />
+		<petz:NamedBrush Brush="#FF00FF7F" BrushName="#00FF7F Spring Green" />
+		<petz:NamedBrush Brush="#FF4682B4" BrushName="#4682B4 Steel Blue" />
+		<petz:NamedBrush Brush="#FFD2B48C" BrushName="#D2B48C Tan" />
+		<petz:NamedBrush Brush="#FF008080" BrushName="#008080 Teal" />
+		<petz:NamedBrush Brush="#FFD8BFD8" BrushName="#D8BFD8 Thistle" />
+		<petz:NamedBrush Brush="#FFFF6347" BrushName="#FF6347 Tomato" />
+		<petz:NamedBrush Brush="#00FFFFFF" BrushName="#FFFFFF Transparent" />
+		<petz:NamedBrush Brush="#FF40E0D0" BrushName="#40E0D0 Turquoise" />
+		<petz:NamedBrush Brush="#FFEE82EE" BrushName="#EE82EE Violet" />
+		<petz:NamedBrush Brush="#FFF5DEB3" BrushName="#F5DEB3 Wheat" />
+		<petz:NamedBrush Brush="#FFFFFFFF" BrushName="#FFFFFF White" />
+		<petz:NamedBrush Brush="#FFF5F5F5" BrushName="#F5F5F5 White Smoke" />
+		<petz:NamedBrush Brush="#FFFFFF00" BrushName="#FFFF00 Yellow" />
+		<petz:NamedBrush Brush="#FF9ACD32" BrushName="#9ACD32 Yellow Green" />
+	</ListBox>
+</UserControl>

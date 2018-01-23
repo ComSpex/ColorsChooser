@@ -1,0 +1,124 @@
+﻿<!-- $Header: /WPF/ColorfulWindow/ColorfulWindow.xaml 9     13/02/09 8:18 Yosuke $ -->
+	<Window x:Class="ComSpexApp.ColorfulWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:cs="clr-namespace:ComSpex;assembly=OutlinedText"
+	xmlns:ComSpex="clr-namespace:ComSpexWpf;assembly=ColorsListbox"
+	Title="ColorWindow" Height="640" Width="910" 
+				Background="{Binding ElementName=A,Path=SelectedValue}" 
+				MouseDown="Window_MouseDown" MouseWheel="Window_MouseWheel" AllowsTransparency="True" WindowStyle="None">
+	<Window.Resources>
+		<Style TargetType="ComSpex:ColorsListbox">
+			<Setter Property="SelectedValuePath" Value="Brush" />
+			<Setter Property="Height" Value="204" />
+			<Setter Property="Background" Value="Transparent" />
+		</Style>
+		<Style TargetType="cs:OutlinedText">
+			<Setter Property="FontFamily" Value="Segou UI" />
+			<Setter Property="FontSize" Value="40pt" />
+			<Setter Property="Text" Value="THIS IS A SAMPLE TEXT." />
+			<Setter Property="FontWeight" Value="Bold" />
+		</Style>
+	</Window.Resources>
+	<Border BorderThickness="50,50,50,54" CornerRadius="70.7106781186548,70.7106781186548,70.7106781186548,70.7106781186548" 
+					BorderBrush="{Binding ElementName=B,Path=SelectedValue}" 
+					Background="{Binding ElementName=A,Path=SelectedValue}"
+					Name="outB">
+		<Grid Name="innG" ShowGridLines="False">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="300*" />
+				<RowDefinition Height="50" />
+			</Grid.RowDefinitions>
+			<Grid HorizontalAlignment="Right" VerticalAlignment="Top">
+				<Border BorderBrush="Red" BorderThickness="1" CornerRadius="10"
+								Background="Transparent" Padding="10">
+					<UniformGrid Rows="3">
+						<UniformGrid.Resources>
+							<Style TargetType="cs:OutlinedText">
+								<Setter Property="FontSize" Value="24pt" />
+								<Setter Property="FontFamily" Value="Courier New" />
+								<Setter Property="FontWeight" Value="Bold" />
+								<Setter Property="FontStyle" Value="Italic" />
+								<Setter Property="Stroke" Value="Black" />
+								<Setter Property="StrokeThickness" Value="0.5" />
+								<Setter Property="BitmapEffect">
+									<Setter.Value>
+										<DropShadowBitmapEffect Color="Gray" Direction="320" ShadowDepth="3" />
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</UniformGrid.Resources>
+						<cs:OutlinedText Text="{Binding ElementName=A,Path=SelectedValue}"
+														 Fill="{Binding ElementName=A,Path=SelectedValue}"/>
+						<cs:OutlinedText Text="{Binding ElementName=B,Path=SelectedValue}" 
+														 Fill="{Binding ElementName=B,Path=SelectedValue}"/>
+						<cs:OutlinedText Text="{Binding ElementName=C,Path=SelectedValue}"
+														 Fill="{Binding ElementName=C,Path=SelectedValue}"/>
+					</UniformGrid>
+					<Border.BitmapEffect>
+						<DropShadowBitmapEffect Color="ForestGreen" Direction="320" ShadowDepth="3" Softness="0.2" />
+					</Border.BitmapEffect>
+				</Border>
+				<Grid.RenderTransform>
+					<TranslateTransform X="50" Y="-50" />
+				</Grid.RenderTransform>
+			</Grid>
+			<Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+				<ComSpex:ColorsListbox Name="C" SelectionChanged="C_SelectionChanged" Height="104"/>
+			</Grid>
+			<Grid HorizontalAlignment="Right" VerticalAlignment="Bottom">
+				<ComSpex:ColorsListbox Name="A" SelectionChanged="A_SelectionChanged" />
+			</Grid>
+			<Grid HorizontalAlignment="Left" VerticalAlignment="Bottom">
+				<ComSpex:ColorsListbox Name="B" SelectionChanged="B_SelectionChanged" />
+			</Grid>
+			<Grid HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.7">
+				<Border Name="grad" BorderThickness="20,10,15,30" 
+								CornerRadius="22.360679774997896964091736687313,18.027756377319946465596106337352,33.541019662496845446137605030969,36.055512754639892931192212674705" >
+					<Grid Width="200" Height="200" />
+				</Border>
+				<Grid.RenderTransform>
+					<TransformGroup>
+						<RotateTransform CenterX="100" CenterY="100" Angle="35" />
+						<TranslateTransform Y="30" />
+					</TransformGroup>
+				</Grid.RenderTransform>
+			</Grid>
+			<Grid Grid.Row="1" HorizontalAlignment="Center" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" MouseDown="Grid_MouseDown">
+				<Border>
+					<cs:OutlinedText FontSize="30pt" FontFamily="Times New Roman"
+								 Stroke="{Binding ElementName=A,Path=SelectedValue}" 
+								 Fill="{Binding ElementName=B,Path=SelectedValue}" 
+								 Name="textOfB">
+					</cs:OutlinedText>
+				</Border>
+				<Grid.RenderTransform>
+					<TranslateTransform X="0" Y="46" />
+				</Grid.RenderTransform>
+			</Grid>
+			<Grid Margin="89.403,0" Grid.RowSpan="2" Height="62.216" VerticalAlignment="Bottom" HorizontalAlignment="Center" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" MouseDown="Grid_MouseDown">
+				<Border>
+					<cs:OutlinedText 
+								 Stroke="{Binding ElementName=B,Path=SelectedValue}" 
+								 Fill="{Binding ElementName=A,Path=SelectedValue}" 
+								 Name="textOfA" />
+				</Border>
+			</Grid>
+			<Grid Name="OfTextC" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Grid.Row="0"
+						MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" MouseDown="Grid_MouseDown">
+				<Border>
+					<cs:OutlinedText Fill="{Binding ElementName=A,Path=SelectedValue}" 
+												 Stroke="{Binding ElementName=B,Path=SelectedValue}" 
+												 StrokeThickness="2" 
+												 Text="This is a sample text." 
+												 FontFamily="Monotype Corsiva" FontSize="50pt" FontWeight="Bold" 
+												 Name="textOfC">
+					</cs:OutlinedText>
+				</Border>
+				<Grid.RenderTransform>
+					<RotateTransform Angle="-90" />
+				</Grid.RenderTransform>
+			</Grid>
+		</Grid>
+	</Border>
+</Window>

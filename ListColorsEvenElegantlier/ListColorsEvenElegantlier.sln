@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListColorsEvenElegantlier", "ListColorsEvenElegantlier.csproj", "{89C61AE9-0BEF-4BEA-85FB-A10D3674D0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSyntax", "..\WpfSyntax\WpfSyntax.csproj", "{209DB13A-F627-4211-B780-937F051039DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlinedText", "..\..\..\..\Visual Studio 2008\Projects\Greetings\OutlinedText\OutlinedText.csproj", "{008DC332-1BB5-4CE3-9266-E121CC1427D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorfulWindow", "..\ColorfulWindow\ColorfulWindow.csproj", "{243635A3-1400-47B1-BC66-98F3DF14959F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsListbox", "..\ColorsListbox\ColorsListbox.csproj", "{BD94B19B-5982-49E6-9677-51212EE7C309}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccProjectName0 = \u0022$/WPF\u0022,\u0020SPAAAAAA
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = ListColorsEvenElegantlier\\
+		SccProjectUniqueName1 = ListColorsEvenElegantlier.csproj
+		SccLocalPath1 = ..
+		SccProjectFilePathRelativizedFromConnection1 = ListColorsEvenElegantlier\\
+		SccProjectUniqueName2 = ..\\..\\..\\..\\Visual\u0020Studio\u00202008\\Projects\\Greetings\\OutlinedText\\OutlinedText.csproj
+		SccProjectName2 = \u0022$/Greetings.root/Greetings/OutlinedText\u0022,\u0020WJAAAAAA
+		SccLocalPath2 = ..\\..\\..\\..\\Visual\u0020Studio\u00202008\\Projects\\Greetings\\OutlinedText
+		SccProjectUniqueName3 = ..\\WpfSyntax\\WpfSyntax.csproj
+		SccLocalPath3 = ..
+		SccProjectFilePathRelativizedFromConnection3 = WpfSyntax\\
+		SccProjectUniqueName4 = ..\\ColorsListbox\\ColorsListbox.csproj
+		SccLocalPath4 = ..
+		SccProjectFilePathRelativizedFromConnection4 = ColorsListbox\\
+		SccProjectUniqueName5 = ..\\ColorfulWindow\\ColorfulWindow.csproj
+		SccLocalPath5 = ..
+		SccProjectFilePathRelativizedFromConnection5 = ColorfulWindow\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89C61AE9-0BEF-4BEA-85FB-A10D3674D0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C61AE9-0BEF-4BEA-85FB-A10D3674D0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C61AE9-0BEF-4BEA-85FB-A10D3674D0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C61AE9-0BEF-4BEA-85FB-A10D3674D0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{209DB13A-F627-4211-B780-937F051039DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209DB13A-F627-4211-B780-937F051039DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209DB13A-F627-4211-B780-937F051039DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209DB13A-F627-4211-B780-937F051039DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008DC332-1BB5-4CE3-9266-E121CC1427D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{243635A3-1400-47B1-BC66-98F3DF14959F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD94B19B-5982-49E6-9677-51212EE7C309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
