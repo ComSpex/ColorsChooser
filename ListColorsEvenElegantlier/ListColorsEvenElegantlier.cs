@@ -13,6 +13,7 @@ using System.Windows.Shapes;
 using System.Windows.Markup;
 using System.IO;
 using ComSpex;
+using NamedBrush = ComSpexWpf.NamedBrush;
 
 namespace Petzold.ListColorsEvenElegantlier {
 	public class ListColorsEvenElegantlier:Window {

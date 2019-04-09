@@ -136,7 +136,7 @@
       <Name>ColorsListbox</Name>
     </ProjectReference>
     <ProjectReference Include="..\OutlinedText\OutlinedText.csproj">
-      <Project>{008DC332-1BB5-4CE3-9266-E121CC1427D4}</Project>
+      <Project>{008dc332-1bb5-4ce3-9266-e121cc1427d4}</Project>
       <Name>OutlinedText</Name>
     </ProjectReference>
   </ItemGroup>
